@@ -2,28 +2,28 @@
 
 ## New in 3.1.1
 
-- Fix [#413](https://github.com/pyenv-win/pyenv-win/issues/413): bug: pyenv install failing because the system cannot find the file specified 'dark.exe'
+- Fix [#413](https://github.com/bberthelemy/pyenv-win/issues/413): bug: pyenv install failing because the system cannot find the file specified 'dark.exe'
 - Adding: python 3.8, 3.9 and 3.10 in classifiers
 
 ## New in 3.1
 
-- Fix [#142](https://github.com/pyenv-win/pyenv-win/issues/142): Prefer the local installer over the web based installer
-- Fix [#401](https://github.com/pyenv-win/pyenv-win/issues/401), [#396](https://github.com/pyenv-win/pyenv-win/issues/396), [#383](https://github.com/pyenv-win/pyenv-win/issues/383) and [#360](https://github.com/pyenv-win/pyenv-win/issues/360): Added the same level of support for local based installer as we have for web based installers in [#410](https://github.com/pyenv-win/pyenv-win/issues/410)
+- Fix [#142](https://github.com/bberthelemy/pyenv-win/issues/142): Prefer the local installer over the web based installer
+- Fix [#401](https://github.com/bberthelemy/pyenv-win/issues/401), [#396](https://github.com/bberthelemy/pyenv-win/issues/396), [#383](https://github.com/bberthelemy/pyenv-win/issues/383) and [#360](https://github.com/bberthelemy/pyenv-win/issues/360): Added the same level of support for local based installer as we have for web based installers in [#410](https://github.com/bberthelemy/pyenv-win/issues/410)
   - **Note:** It is best to uninstall affected versions (3.9.11 and above) via Windows' `Add or remove Programs` systems settings page before running the `pyenv uninstall` command for those versions.
 
 ## New in 3.0
 
-- Fix [#311](https://github.com/pyenv-win/pyenv-win/issues/311): Support many global and shell versions.
-- Fix [#318](https://github.com/pyenv-win/pyenv-win/issues/318): `pyenv global` and `pyenv local` no longer affect PYENV_VERSION, which only `pyenv shell` should affect.
+- Fix [#311](https://github.com/bberthelemy/pyenv-win/issues/311): Support many global and shell versions.
+- Fix [#318](https://github.com/bberthelemy/pyenv-win/issues/318): `pyenv global` and `pyenv local` no longer affect PYENV_VERSION, which only `pyenv shell` should affect.
 - The test suite emulates a 32 bit architecture environment.
 - The test suite now also runs tests using `powershell` and `pwsh` in addition to `cmd`.
 - `pyenv shell` now works like `pyenv global` and `pyenv local` in that, on 32-bit platforms, it adds `-win32` to every supplied version if not explicitly added.
 
 ## New in 2.64.11
 
-- Fix [#287](https://github.com/pyenv-win/pyenv-win/issues/287): Prevent infinite recursion by removing the shims directory from the path.
-- Fix [#259](https://github.com/pyenv-win/pyenv-win/issues/259): Correctly handle spaces in `pyenv` path.
-- Fix [#305](https://github.com/pyenv-win/pyenv-win/issues/305): Fix `exec` preferring the last version listed in `.python-version` instead of the first.
+- Fix [#287](https://github.com/bberthelemy/pyenv-win/issues/287): Prevent infinite recursion by removing the shims directory from the path.
+- Fix [#259](https://github.com/bberthelemy/pyenv-win/issues/259): Correctly handle spaces in `pyenv` path.
+- Fix [#305](https://github.com/bberthelemy/pyenv-win/issues/305): Fix `exec` preferring the last version listed in `.python-version` instead of the first.
   - **Note:** `pyenv rehash` must be called after upgrading. Expect the following error message if you don't:
 
     ```plaintext
@@ -37,33 +37,33 @@
 
 ## New in 2.64.9
 
-- Feature [#210](https://github.com/pyenv-win/pyenv-win/issues/210): Support extended installer options
-- Fix [#269](https://github.com/pyenv-win/pyenv-win/issues/269): Migration from travis-ci to GitHub Actions
+- Feature [#210](https://github.com/bberthelemy/pyenv-win/issues/210): Support extended installer options
+- Fix [#269](https://github.com/bberthelemy/pyenv-win/issues/269): Migration from travis-ci to GitHub Actions
 - Fix `exec` shims for `bat` files.
-- Fix [#193](https://github.com/pyenv-win/pyenv-win/issues/193): PowerShell support for `pyenv shell`
+- Fix [#193](https://github.com/bberthelemy/pyenv-win/issues/193): PowerShell support for `pyenv shell`
 
 ## New in 2.64.8
 
-- Fix [#198](https://github.com/pyenv-win/pyenv-win/issues/198): [PEP 514](https://www.python.org/dev/peps/pep-0514/) support (64 bits only, excluding pypy).
+- Fix [#198](https://github.com/bberthelemy/pyenv-win/issues/198): [PEP 514](https://www.python.org/dev/peps/pep-0514/) support (64 bits only, excluding pypy).
 
 ## New in 2.64.7.4
 
-- Fix [#256](https://github.com/pyenv-win/pyenv-win/issues/256): Fix `pyenv --version` for username with space.
+- Fix [#256](https://github.com/bberthelemy/pyenv-win/issues/256): Fix `pyenv --version` for username with space.
 
 ## New in 2.64.7.3
 
-- Fix [#254](https://github.com/pyenv-win/pyenv-win/issues/254): Fix exec with many local versions.
+- Fix [#254](https://github.com/bberthelemy/pyenv-win/issues/254): Fix exec with many local versions.
 
 ## New in 2.64.7.2
 
-- Fix [#250](https://github.com/pyenv-win/pyenv-win/issues/250): PATH is not impacted after a `pyenv exec`.
+- Fix [#250](https://github.com/bberthelemy/pyenv-win/issues/250): PATH is not impacted after a `pyenv exec`.
 
 ## New in 2.64.7.1
 
-- Fix [#246](https://github.com/pyenv-win/pyenv-win/issues/246): `pyenv which` and `pyenv whence` show help if no argument specified.
-- Fix exec problems after merge of [#140](https://github.com/pyenv-win/pyenv-win/pull/140).
-- Fix [#247](https://github.com/pyenv-win/pyenv-win/pull/247): no more incorrect file name in bash script if username contains a space.
-- Fix [#243](https://github.com/pyenv-win/pyenv-win/issues/243): hot fix for `pyenv exec`.
+- Fix [#246](https://github.com/bberthelemy/pyenv-win/issues/246): `pyenv which` and `pyenv whence` show help if no argument specified.
+- Fix exec problems after merge of [#140](https://github.com/bberthelemy/pyenv-win/pull/140).
+- Fix [#247](https://github.com/bberthelemy/pyenv-win/pull/247): no more incorrect file name in bash script if username contains a space.
+- Fix [#243](https://github.com/bberthelemy/pyenv-win/issues/243): hot fix for `pyenv exec`.
 
 ## New in 2.64.6.1
 
@@ -71,18 +71,18 @@
 
 ## New in 2.64.5
 
-- Fix [#239](https://github.com/pyenv-win/pyenv-win/issues/239): Improve `rehash` error when no version installed.
+- Fix [#239](https://github.com/bberthelemy/pyenv-win/issues/239): Improve `rehash` error when no version installed.
 - Add pypy support.
-- Fix [#140](https://github.com/pyenv-win/pyenv-win/pull/140): Get rid of temp `exec.bat` to support multiple exec in parallel.
+- Fix [#140](https://github.com/bberthelemy/pyenv-win/pull/140): Get rid of temp `exec.bat` to support multiple exec in parallel.
 
 ## New in 2.64.4
 
 - More python versions supported.
-- Fix [#217](https://github.com/pyenv-win/pyenv-win/pull/217): Add missing call to `exec.bat`.
-- Enhancement [#225](https://github.com/pyenv-win/pyenv-win/pull/217): Add tox support.
-- Fix [#204](https://github.com/pyenv-win/pyenv-win/issues/239): Support many local versions.
-- Enhancement [#220](https://github.com/pyenv-win/pyenv-win/issues/220): Rehash all installed versions with more shims.
-- Enhancement [#221](https://github.com/pyenv-win/pyenv-win/pull/221): Add `pyenv global --unset`.
+- Fix [#217](https://github.com/bberthelemy/pyenv-win/pull/217): Add missing call to `exec.bat`.
+- Enhancement [#225](https://github.com/bberthelemy/pyenv-win/pull/217): Add tox support.
+- Fix [#204](https://github.com/bberthelemy/pyenv-win/issues/239): Support many local versions.
+- Enhancement [#220](https://github.com/bberthelemy/pyenv-win/issues/220): Rehash all installed versions with more shims.
+- Enhancement [#221](https://github.com/bberthelemy/pyenv-win/pull/221): Add `pyenv global --unset`.
 
 ## New in 2.64.3
 

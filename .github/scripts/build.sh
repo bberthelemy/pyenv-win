@@ -1,4 +1,4 @@
-export HOME="/d/a/pyenv-win/pyenv-win"
+export HOME="/d/a/bberthelemy/pyenv-win"
 export PYENV="$HOME/pyenv-win"
 export PYENV_HOME="$HOME/pyenv-win"
 export PYENV_ROOT="$HOME/pyenv-win"

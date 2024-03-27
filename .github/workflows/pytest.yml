@@ -15,7 +15,7 @@ jobs:
     name: pyenv-win pytest
     runs-on: windows-latest
     env:
-      HOME: D:/a/pyenv-win/pyenv-win
+      HOME: D:/a/bberthelemy/pyenv-win
     steps:
 
       - name: checkout

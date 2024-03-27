@@ -16,7 +16,7 @@ jobs:
   update_cache:
     runs-on: windows-latest
     env:
-      HOME: D:/a/pyenv-win/pyenv-win
+      HOME: D:/a/bberthelemy/pyenv-win
     steps:
     - name: Checkout master
       uses: actions/checkout@v3

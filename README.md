@@ -6,26 +6,29 @@ For existing python users, we support [installation via pip](#installation).
 
 Contributors and Interested people can join us on @[Slack](https://join.slack.com/t/pyenv/shared_invite/zt-f9ydwgyt-Fp8tehxqeCQi5mi77RxpGw). Your help keeps us motivated!
 
-[![pytest](https://github.com/pyenv-win/pyenv-win/actions/workflows/pytest.yml/badge.svg)](https://github.com/pyenv-win/pyenv-win/actions/workflows/pytest.yml)
+[![pytest](https://github.com/bberthelemy/pyenv-win/actions/workflows/pytest.yml/badge.svg)](https://github.com/bberthelemy/pyenv-win/actions/workflows/pytest.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub issues open](https://img.shields.io/github/issues/pyenv-win/pyenv-win.svg?)](https://github.com/pyenv-win/pyenv-win/issues)
+[![GitHub issues open](https://img.shields.io/github/issues/bberthelemy/pyenv-win.svg?)](https://github.com/bberthelemy/pyenv-win/issues)
 [![Downloads](https://pepy.tech/badge/pyenv-win)](https://pepy.tech/project/pyenv-win)
 [![Rate this package](https://badges.openbase.com/python/rating/pyenv-win.svg?token=hjylt9qszl1DzDMCXNqMQZ6ijtlNCYzG3dKZNF+hgk4=)](https://openbase.com/python/pyenv-win?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
 
-- [Introduction](#introduction)
-- [pyenv](#pyenv)
-- [pyenv-win commands](#pyenv-win-commands)
-- [Installation](#installation)
-- [Validate installation](#validate-installation)
-- [Usage](#usage)
-- [How to update pyenv](#how-to-update-pyenv)
-- [Announcements](#announcements)
-- [FAQ](#faq)
-- [Changelog](#changelog)
-- [How to contribute](#how-to-contribute)
-- [Bug Tracker and Support](#bug-tracker-and-support)
-- [License and Copyright](#license-and-copyright)
-- [Author and Thanks](#author-and-thanks)
+- [pyenv for Windows](#pyenv-for-windows)
+  - [Introduction](#introduction)
+  - [pyenv](#pyenv)
+  - [Quick start](#quick-start)
+  - [pyenv-win commands](#pyenv-win-commands)
+  - [Installation](#installation)
+  - [Validate installation](#validate-installation)
+    - [Manually check the settings](#manually-check-the-settings)
+  - [Usage](#usage)
+  - [How to update pyenv](#how-to-update-pyenv)
+  - [Announcements](#announcements)
+  - [FAQ](#faq)
+  - [Changelog](#changelog)
+  - [How to contribute](#how-to-contribute)
+  - [Bug Tracker and Support](#bug-tracker-and-support)
+  - [License and Copyright](#license-and-copyright)
+  - [Author and Thanks](#author-and-thanks)
 
 ## Introduction
 
@@ -42,7 +45,7 @@ This project was forked from [rbenv-win][3] and modified for [pyenv][1]. It is n
 1. Install pyenv-win in PowerShell.
 
    ```pwsh
-   Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
+   Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/bberthelemy/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
    ```
 
 2. Reopen PowerShell
@@ -219,7 +222,7 @@ Please see the [Changelog](./docs/changelog.md) page.
 
 ## Bug Tracker and Support
 
-- Please report any suggestions, bug reports, or annoyances with pyenv-win through the [GitHub bug tracker](https://github.com/pyenv-win/pyenv-win/issues).
+- Please report any suggestions, bug reports, or annoyances with pyenv-win through the [GitHub bug tracker](https://github.com/bberthelemy/pyenv-win/issues).
 
 ## License and Copyright
 
@@ -229,7 +232,7 @@ Please see the [Changelog](./docs/changelog.md) page.
 
 ## Author and Thanks
 
-pyenv-win was developed by [Kiran Kumar Kotari](https://github.com/kirankotari) and [Contributors](https://github.com/pyenv-win/pyenv-win/graphs/contributors)  
+pyenv-win was developed by [Kiran Kumar Kotari](https://github.com/kirankotari) and [Contributors](https://github.com/bberthelemy/pyenv-win/graphs/contributors)  
 Thanks for all Contributors and Supports for patience for the latest major release.
 
 [1]: https://github.com/pyenv/pyenv
